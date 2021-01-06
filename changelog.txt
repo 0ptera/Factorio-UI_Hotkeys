@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2020-11-27
+  Features:
+    - updated to Factorio 1.1
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 2020-03-20
+  Bugfixes:
+    - workaround for toggling menu bar glitching map and research https://forums.factorio.com/viewtopic.php?f=7&t=82529
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 2020-03-19
+  Features:
+    - toggling all ui elements off clears cursor and hides mouse over informations
+  Bugfixes:
+    - toggling all ui elements on also turned rail block visualisation on, now it only turns rail block visualisation off
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2020-03-19
+  Features:
+    - toggle menu bar
+    - toggle shortcut bar
+    - toggle all ui elements
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2020-01-21
+  Features:
+    - updated to Factorio 0.18
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2019-03-07
+  Features:
+    - updated to Factorio 0.17
+    - new thumbnail
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-02-10
+  Features:
+    - toggle minimap
+    - toggle research progress
+    - toggle rail block visualisation between always on and only when holding signals
+    - toggle toolbar and equipment
+    - toggle alerts
