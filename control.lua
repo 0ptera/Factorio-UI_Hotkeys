@@ -3,6 +3,7 @@ local Messages = {
   ["show_research_info"] = "Show research progress",
   ["show_side_menu"] = "Show side menu",
   ["show_minimap"] = "Show minimap",
+  ["show_map_view_options"] = "Show map options",
   ["show_controller_gui"] = "Show toolbar",
   ["show_shortcut_bar"] = "Show shortcut bar",
   ["show_alert_gui"] = "Show alerts",
@@ -17,10 +18,10 @@ script.on_event("toggle_view_all", function(event)
     player.game_view_settings["show_research_info"] = true
     player.game_view_settings["show_side_menu"] = true
     player.game_view_settings["show_minimap"] = true
+    player.game_view_settings["show_map_view_options"] = true
     player.game_view_settings["show_controller_gui"] = true
     player.game_view_settings["show_shortcut_bar"] = true
     player.game_view_settings["show_alert_gui"] = true
-    player.game_view_settings["show_map_view_options"] = true
     player.game_view_settings["update_entity_selection"] = true
     global.gui_hidden[event.player_index] = nil
     player.surface.create_entity{
@@ -35,10 +36,10 @@ script.on_event("toggle_view_all", function(event)
     player.game_view_settings["show_research_info"] = false
     player.game_view_settings["show_side_menu"] = false
     player.game_view_settings["show_minimap"] = false
+    player.game_view_settings["show_map_view_options"] = false
     player.game_view_settings["show_controller_gui"] = false
     player.game_view_settings["show_shortcut_bar"] = false
     player.game_view_settings["show_alert_gui"] = false
-    player.game_view_settings["show_map_view_options"] = false
     player.game_view_settings["update_entity_selection"] = false
     player.game_view_settings["show_rail_block_visualisation"] = false
     global.gui_hidden[event.player_index] = true
@@ -84,6 +85,9 @@ script.on_event("toggle_view_menu", function(event)
 end)
 script.on_event("toggle_view_map", function(event)
   toggle_view_setting(event.player_index, "show_minimap", true)
+end)
+script.on_event("toggle_view_map_options", function(event)
+  toggle_view_setting(event.player_index, "show_map_view_options", true)
 end)
 
 script.on_event("toggle_view_toolbar", function(event)

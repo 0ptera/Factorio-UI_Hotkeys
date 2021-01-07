@@ -29,6 +29,13 @@ data:extend({
   },
   {
     type = "custom-input",
+    name = "toggle_view_map_options",
+    key_sequence = "",
+    consuming = "game-only",
+    order = "bd",
+  },
+  {
+    type = "custom-input",
     name = "toggle_view_toolbar",
     key_sequence = "",
     consuming = "game-only",
@@ -53,7 +60,7 @@ data:extend({
     name = "toggle_view_rail_blocks",
     key_sequence = "",
     consuming = "game-only",
-    order = "d",
+    order = "da",
   },
 
 })
