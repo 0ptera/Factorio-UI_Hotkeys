@@ -20,6 +20,7 @@ script.on_event("toggle_view_all", function(event)
     player.game_view_settings["show_controller_gui"] = true
     player.game_view_settings["show_shortcut_bar"] = true
     player.game_view_settings["show_alert_gui"] = true
+    player.game_view_settings["show_map_view_options"] = true
     player.game_view_settings["update_entity_selection"] = true
     global.gui_hidden[event.player_index] = nil
     player.surface.create_entity{
@@ -37,6 +38,7 @@ script.on_event("toggle_view_all", function(event)
     player.game_view_settings["show_controller_gui"] = false
     player.game_view_settings["show_shortcut_bar"] = false
     player.game_view_settings["show_alert_gui"] = false
+    player.game_view_settings["show_map_view_options"] = false
     player.game_view_settings["update_entity_selection"] = false
     player.game_view_settings["show_rail_block_visualisation"] = false
     global.gui_hidden[event.player_index] = true
